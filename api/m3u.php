@@ -19,7 +19,7 @@ foreach ($channels as $entry) {
     
     $mpd = isset($entry['streamData']['initialUrl']) ? $entry['streamData']['initialUrl'] : '';
     $extension = pathinfo($mpd, PATHINFO_EXTENSION);
-    $license_key_url = "http://yuvraj.fun/tp-keys/key.php?id=$id";
+    $license_key_url = "https://play.denver1769.in/KeyLelo4.php?id=$id";
 
     // Generate playlist entry
     $inus_data .= '#EXTINF:-1 tvg-id="' . $id . '" tvg-logo="' . $logo . '" group-title="' . $genre . '", ' . $name . PHP_EOL;
