@@ -69,7 +69,7 @@ function extractPsshFromManifest(string $content, string $baseUrl, string $userA
 }
 
 function getChannelInfo(string $id): array {
-    $json = @file_get_contents('https://raw.githubusercontent.com/Babel-In/TP-IN/main/jup.json');
+    $json = @file_get_contents('https://raw.githubusercontent.com/Skkings001/Itsnee/refs/heads/main/TP_keys.json');
     $channels = $json !== false ? json_decode($json, true) : null;
     if ($channels === null) {
         exit;
@@ -81,7 +81,7 @@ function getChannelInfo(string $id): array {
 }
 
 function getAllChannelInfo(): array {
-    $json = @file_get_contents('https://raw.githubusercontent.com/Babel-In/TP-IN/main/jup.json');
+    $json = @file_get_contents('https://raw.githubusercontent.com/Skkings001/Itsnee/refs/heads/main/TP_keys.json');
     if ($json === false) {
         header("HTTP/1.1 500 Internal Server Error");
         exit;
